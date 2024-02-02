@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     
     #apps
     'apps.bank_system',
+    'apps.users',
 ]
 
 MIDDLEWARE = [
@@ -132,7 +133,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = 'bank_system.User'
+AUTH_USER_MODEL = 'users.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
